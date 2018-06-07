@@ -1,0 +1,191 @@
+<html ng-app="myApp">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body ng-controller="homeController as ctrl">
+
+    <table>
+        <thead>
+         <tr>
+           <th></th><th>A</th>
+           <th>B</th>
+           <th>C</th>
+           <th>D</th>
+           <th>E</th>  
+         </tr>    
+        </thead>
+        <tbody>    
+        <tr>
+            <td>1</td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.A1" ng-change="ctrl.checkValue(ctrl.cells.A1,'A1')">
+                <span>{{ctrl.values.A1}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.B1" ng-change="ctrl.checkValue(ctrl.cells.B1,'B1')">
+                <span>{{ctrl.values.B1}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.C1" ng-change="ctrl.checkValue(ctrl.cells.C1,'C1')">
+                <span>{{ctrl.values.C1}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.D1" ng-change="ctrl.checkValue(ctrl.cells.D1,'D1')">
+                <span>{{ctrl.values.D1}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.E1" ng-change="ctrl.checkValue(ctrl.cells.E1,'E1')">
+                <span>{{ctrl.values.E1}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.A2" ng-change="ctrl.checkValue(ctrl.cells.A2,'A1')">
+                <span>{{ctrl.values.A2}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.B2" ng-change="ctrl.checkValue(ctrl.cells.B2,'B2')">
+                <span>{{ctrl.values.B2}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.C2" ng-change="ctrl.checkValue(ctrl.cells.C2,'C2')">
+                <span>{{ctrl.values.C2}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.D2" ng-change="ctrl.checkValue(ctrl.cells.D2,'D2')">
+                <span>{{ctrl.values.D2}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.E2" ng-change="ctrl.checkValue(ctrl.cells.E2,'E2')">
+                <span>{{ctrl.values.E2}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.A3" ng-change="ctrl.checkValue(ctrl.cells.A3,'A3')">
+                <span>{{ctrl.values.A3}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.B3" ng-change="ctrl.checkValue(ctrl.cells.B3,'B3')">
+                <span>{{ctrl.values.B3}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.C3" ng-change="ctrl.checkValue(ctrl.cells.C3,'C3')">
+                <span>{{ctrl.values.C3}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.D3" ng-change="ctrl.checkValue(ctrl.cells.D3,'D3')">
+                <span>{{ctrl.values.D3}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.E3" ng-change="ctrl.checkValue(ctrl.cells.E3,'E3')">
+                <span>{{ctrl.values.E3}}</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.A4" ng-change="ctrl.checkValue(ctrl.cells.A4,'A4')">
+                <span>{{ctrl.values.A4}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.B4" ng-change="ctrl.checkValue(ctrl.cells.B4,'B4')">
+                <span>{{ctrl.values.B4}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.C4" ng-change="ctrl.checkValue(ctrl.cells.C4,'C4')">
+                <span>{{ctrl.values.C4}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.D4" ng-change="ctrl.checkValue(ctrl.cells.D4,'D4')">
+                <span>{{ctrl.values.D4}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.E4" ng-change="ctrl.checkValue(ctrl.cells.E4,'E4')">
+                <span>{{ctrl.values.E4}}</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.A5" ng-change="ctrl.checkValue(ctrl.cells.A5,'A5')">
+                <span>{{ctrl.values.A5}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.B5" ng-change="ctrl.checkValue(ctrl.cells.B5,'B5')">
+                <span>{{ctrl.values.B5}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.C5" ng-change="ctrl.checkValue(ctrl.cells.C5,'C5')">
+                <span>{{ctrl.values.C5}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.D5" ng-change="ctrl.checkValue(ctrl.cells.D5,'D5')">
+                <span>{{ctrl.values.D5}}</span>
+            </td>
+            <td>
+                <input type="text" ng-model="ctrl.cells.E5" ng-change="ctrl.checkValue(ctrl.cells.E5,'E5')">
+                <span>{{ctrl.values.E5}}</span>
+            </td>
+        </tr>
+    </tbody>
+
+    </table>
+</body>
+
+
+</html>
+
+<script>
+
+
+    const app = angular.module("myApp", []);
+
+    app.controller("homeController", function ($scope) {
+        //let vm = this;
+
+        this.totalCells = 5;
+        this.cells = {};
+        this.values = {};
+
+
+        this.checkValue = (val, cellName) => {
+            if (isNaN(val)) {
+                //alert("Not a number");
+                let temp = val;
+                console.log("temp...", temp);
+                if (val === cellName) {
+                    alert("Error");
+                    return;
+                }
+
+                while (this.cells.hasOwnProperty(temp) && isNaN(temp)) {
+                    console.log("this.cells[temp]-->", this.cells[temp]);
+                    if (this.cells[temp] && this.cells[temp] != null && this.cells[temp] != undefined)
+                        temp = this.cells[temp];
+
+                    if (temp === cellName) {
+                        alert("cycle detected"); break; //error//cycle
+                    }
+
+                }
+                if (!isNaN(temp))
+                    this.values[cellName] = temp;
+                else
+                    this.values[cellName] = "";
+
+                console.log("Final val", this.values);
+            }
+            else {
+                //alert("Number");
+            }
+        }
+    });
+
+</script>

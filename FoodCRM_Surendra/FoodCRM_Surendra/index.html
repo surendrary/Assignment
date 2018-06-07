@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularD3App">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJs | D3.JS</title>
+		<script src='public/js/sales.js'></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/d3chart.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body >
+    <div >
+      <div ng-controller="D3ChartController">
+        <div class="container-fluid" >
+          <div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+            <h2 class="text-center text-success" style="margin-bottom : 0px;">
+              Real Time Charts<br> <br>
+            </h2>
+            
+              <!-- <h2 class="text-success">Sales</h2> -->
+			  </div>
+            <div class="col-sm-3">  
+			</div>
+				<div class="row" height="100px">
+					<div class="col-sm-12">
+						<table class="table table-striped" style=" table-layout:fixed; width:1550px;">
+							<thead>
+								
+								<th ng-click="openSorting('name')" style="width:200px;"><b>Name</b>
+									<span  class="glyphicon" ng-show="sortKey=='name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
+								<th ng-click="openSorting('company')" style="width:200px;"><b>Company</b>
+									<span  class="glyphicon" ng-show="sortKey=='company'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>	
+								<th style="width:200px; white-space: nowrap;"ng-click="openSorting('email')" ><b>Email</b>
+									<span  class="glyphicon" ng-show="sortKey=='email'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></th>
+								<th  style="width:250px; white-space: nowrap;"><b>Status</b></th>
+							</thead>
+							
+								
+							<tr ng-repeat="user in food|orderBy:sortKey:reverse">
+								
+								<td title="'name'">
+									{{user.name}}
+								</td>
+								<td title="'company'">
+									{{user.company}}
+								</td>
+								<td title="'email'">
+									{{user.email}}
+								</td>
+								<td title="'status'">
+									<select ng-model="user.status" ng-options="status.color as status.color for status in statuses"  ng-change="update(this)"></select>
+								</td>
+							</tr>
+							 
+						</table>
+					</div>
+				</div>	
+            </div>
+          </div>
+          
+		
+      </div>
+    </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- JQuery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- BootStrap Js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- JS Libraries for Angulat.UI and Angular-Main-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>    
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+	
+	<script src='services/d3service.js'></script>
+    <!-- App Js script -->
+	<script src="public/js/dirPagination.js"></script>
+    <script src="public/js/app.js"></script>
+  </body>
+</html>
